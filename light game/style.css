@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(3, 20, 75);
+}
+
+.grid {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  gap: 1rem;
+  list-style-type: none;
+  border-radius: 0.5rem;
+}
+
+.cell {
+  display: block;
+  object-fit: cover;
+  min-width: 4rem;
+  max-width: 6rem;
+  min-height: 4rem;
+  max-height: 6rem;
+  background-color: hsl(0, 1%, 64%);
+  transition: transform 0.1s ease-in-out;
+}
+.cell:hover {
+  transform: rotate(45deg);
+  filter: brightness(130%);
+}
+
+.wrapper {
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
